@@ -13,6 +13,13 @@ app.get('/', (req, res) => {
   res.json({ message: 'QuizBlitz server is running' })
 })
 
+const questions = require('./data/questions')
+
+// GET /api/questions — returns all questions
+app.get('/api/questions', (req, res) => {
+  res.json(questions)
+})
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`)
