@@ -1,0 +1,3 @@
+PROMPT: "Re-format my 10 questions from Phase 1 for a Node.js server. Add unique IDs to each and use module.exports for CommonJS."
+RESPONSE: Provided the questions.js file structure with unique IDs and the module.exports statement.
+WHAT I USED / CHANGED: Copied the formatted array into my data/questions.js file. I wrote the Express route logic myself.
