@@ -33,3 +33,7 @@ WHAT I USED / CHANGED: Installed packages, updated .env, created models/User.js,
 PROMPT: "Alright, MS (milestone) 2"
 RESPONSE: Implemented the user registration route for Milestone 2 of Phase 5. Added bcryptjs and jsonwebtoken imports to server.js and created the POST /api/auth/register endpoint with validation, password hashing, and duplicate email checks.
 WHAT I USED / CHANGED: Applied the diff to server.js.
+
+PROMPT: "Route works fine. MS 3"
+RESPONSE: Implemented the user login route for Milestone 3. Added the POST /api/auth/login endpoint to server.js, which validates credentials, compares passwords with bcrypt, and signs/returns a JWT upon successful login.
+WHAT I USED / CHANGED: Applied the diff to server.js.
