@@ -1,3 +1,7 @@
 PROMPT: "Re-format my 10 questions from Phase 1 for a Node.js server. Add unique IDs to each and use module.exports for CommonJS."
 RESPONSE: Provided the questions.js file structure with unique IDs and the module.exports statement.
 WHAT I USED / CHANGED: Copied the formatted array into my data/questions.js file. I wrote the Express route logic myself.
+
+PROMPT: "I've verified Milestone 3. Please help me implement Milestone 4 from the markdown file."
+RESPONSE: Added the in-memory scores array and the POST /api/scores and GET /api/scores endpoints to server.js as specified in the project requirements.
+WHAT I USED / CHANGED: I applied the suggested diff to server.js and will now test the new routes.
