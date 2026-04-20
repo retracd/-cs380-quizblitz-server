@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 
 const app = express()
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 // Middleware
 app.use(cors())
@@ -22,6 +22,7 @@ app.get('/api/questions', (req, res) => {
 
 // GET /api/questions/random — returns 10 shuffled questions
 app.get('/api/questions/random', (req, res) => {
+  const RANDOM_QUESTIONS_COUNT = 10
   const shuffled = [...questions]  // copy — never mutate the original
 
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -29,7 +30,7 @@ app.get('/api/questions/random', (req, res) => {
     ;[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
   }
 
-  res.json(shuffled.slice(0, 10))
+  res.json(shuffled.slice(0, RANDOM_QUESTIONS_COUNT))
 })
 
 // Start the server
