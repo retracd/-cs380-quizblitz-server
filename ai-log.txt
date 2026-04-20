@@ -17,3 +17,7 @@ WHAT I USED / CHANGED: Applied the changes to gameStore.js and PlayView.vue. Ver
 PROMPT: "Let's start Phase 4. Help me connect the server to MongoDB Atlas. QuizBlitz-Phase-4.md"
 RESPONSE: Guided user through Milestone 2 of Phase 4. Provided instructions to install mongoose and dotenv, create a .env file with the connection string, and applied a diff to server.js to implement the Mongoose connection logic.
 WHAT I USED / CHANGED: Installed packages, created .env, and applied the changes to server.js. Confirmed server connects to MongoDB on startup.
+
+PROMPT: "K it connected when running `npm run dev`. Let's move on to Milestone 3 as outlined in Phase 4 md"
+RESPONSE: Provided the code to create the Mongoose Score model as per Milestone 3, creating a new file at `models/Score.js` with the specified schema and validation rules.
+WHAT I USED / CHANGED: Created the new `models/Score.js` file.
