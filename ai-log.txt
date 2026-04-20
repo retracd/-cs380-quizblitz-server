@@ -21,3 +21,7 @@ WHAT I USED / CHANGED: Installed packages, created .env, and applied the changes
 PROMPT: "K it connected when running `npm run dev`. Let's move on to Milestone 3 as outlined in Phase 4 md"
 RESPONSE: Provided the code to create the Mongoose Score model as per Milestone 3, creating a new file at `models/Score.js` with the specified schema and validation rules.
 WHAT I USED / CHANGED: Created the new `models/Score.js` file.
+
+PROMPT: "K. Phase 4, Milestone 4"
+RESPONSE: Provided a diff for server.js to replace the in-memory scores array with MongoDB logic. This included importing the Score model and rewriting the POST and GET /api/scores routes to be async and use Mongoose methods (create, find, sort, limit) with try/catch blocks.
+WHAT I USED / CHANGED: Applied the diff to server.js. The server now persists scores in the database.
