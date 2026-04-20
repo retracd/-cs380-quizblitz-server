@@ -25,3 +25,7 @@ WHAT I USED / CHANGED: Created the new `models/Score.js` file.
 PROMPT: "K. Phase 4, Milestone 4"
 RESPONSE: Provided a diff for server.js to replace the in-memory scores array with MongoDB logic. This included importing the Score model and rewriting the POST and GET /api/scores routes to be async and use Mongoose methods (create, find, sort, limit) with try/catch blocks.
 WHAT I USED / CHANGED: Applied the diff to server.js. The server now persists scores in the database.
+
+PROMPT: "Alright. Let's finish this project by getting started on QuizBlitz-Phase-5.md. Let's go!"
+RESPONSE: Started Phase 5, Milestone 1. Provided commands to install bcryptjs and jsonwebtoken, instructions to update the .env file, and diffs to create the User model and import it into server.js.
+WHAT I USED / CHANGED: Installed packages, updated .env, created models/User.js, and updated server.js.
