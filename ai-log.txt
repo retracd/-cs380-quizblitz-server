@@ -9,3 +9,7 @@ WHAT I USED / CHANGED: I applied the suggested diff to server.js and will now te
 PROMPT: "Let's do it, and if at anytime I should test functionality with Thunderclient let me know."
 RESPONSE: Suggested a final code polish for server.js to improve structure and readability. Provided a step-by-step guide for testing all API endpoints using Thunder Client as per Milestone 5.
 WHAT I USED / CHANGED: Applied the diff to server.js and will now proceed with the Thunder Client tests.
+
+PROMPT: "Apply the homework changes for Phase 3 to my Vue front-end's gameStore.js and PlayView.vue."
+RESPONSE: Provided diffs to update gameStore.js to fetch questions from the server and add score submission logic, and PlayView.vue to integrate the new score submission UI.
+WHAT I USED / CHANGED: Applied the changes to gameStore.js and PlayView.vue. Verified front-end now fetches questions and can submit scores to the server.
