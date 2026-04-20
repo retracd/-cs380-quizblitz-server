@@ -1,22 +1,23 @@
 const express = require('express')
 const cors = require('cors')
+const questions = require('./data/questions')
 
 const app = express()
 const PORT = process.env.PORT || 3000
 
-// Middleware
+// Middleware — must come before routes
 app.use(cors())
 app.use(express.json())
-
-// Test route
-app.get('/', (req, res) => {
-  res.json({ message: 'QuizBlitz server is running' })
-})
 
 // In-memory scores store (replaced by MongoDB in Week 10)
 let scores = []
 
-const questions = require('./data/questions')
+// ── Routes ──────────────────────────────────────────────────────
+
+// GET / — health check
+app.get('/', (req, res) => {
+  res.json({ message: 'QuizBlitz server is running' })
+})
 
 // GET /api/questions — returns all questions
 app.get('/api/questions', (req, res) => {
@@ -36,7 +37,7 @@ app.get('/api/questions/random', (req, res) => {
   res.json(shuffled.slice(0, RANDOM_QUESTIONS_COUNT))
 })
 
-// POST /api/scores — submit a new score
+// POST /api/scores — submit a score
 app.post('/api/scores', (req, res) => {
   const { playerName, score, totalQuestions } = req.body
 
@@ -58,13 +59,14 @@ app.post('/api/scores', (req, res) => {
   res.status(201).json(newScore)
 })
 
-// GET /api/scores — return all scores, highest first
+// GET /api/scores — all scores, highest first
 app.get('/api/scores', (req, res) => {
   const sorted = [...scores].sort((a, b) => b.score - a.score)
   res.json(sorted)
 })
 
-// Start the server
+// ── Start ────────────────────────────────────────────────────────
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`)
 })

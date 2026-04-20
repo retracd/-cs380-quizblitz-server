@@ -5,3 +5,7 @@ WHAT I USED / CHANGED: Copied the formatted array into my data/questions.js file
 PROMPT: "I've verified Milestone 3. Please help me implement Milestone 4 from the markdown file."
 RESPONSE: Added the in-memory scores array and the POST /api/scores and GET /api/scores endpoints to server.js as specified in the project requirements.
 WHAT I USED / CHANGED: I applied the suggested diff to server.js and will now test the new routes.
+
+PROMPT: "Let's do it, and if at anytime I should test functionality with Thunderclient let me know."
+RESPONSE: Suggested a final code polish for server.js to improve structure and readability. Provided a step-by-step guide for testing all API endpoints using Thunder Client as per Milestone 5.
+WHAT I USED / CHANGED: Applied the diff to server.js and will now proceed with the Thunder Client tests.
