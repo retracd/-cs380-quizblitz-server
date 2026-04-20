@@ -37,3 +37,15 @@ WHAT I USED / CHANGED: Applied the diff to server.js.
 PROMPT: "Route works fine. MS 3"
 RESPONSE: Implemented the user login route for Milestone 3. Added the POST /api/auth/login endpoint to server.js, which validates credentials, compares passwords with bcrypt, and signs/returns a JWT upon successful login.
 WHAT I USED / CHANGED: Applied the diff to server.js.
+
+PROMPT: "Verifed, works! MS 4"
+RESPONSE: Created the `verifyToken` middleware for Milestone 4. This involved creating a new file at `middleware/verifyToken.js` to handle JWT validation from the Authorization header and importing it into `server.js`.
+WHAT I USED / CHANGED: Created the new middleware file and updated `server.js` to import it.
+
+PROMPT: "Perfection. MS 5"
+RESPONSE: Implemented Milestone 5. Updated the Score model to include a `userId` field. Protected the `POST /api/scores` route with the `verifyToken` middleware and updated its logic to use user data from the token instead of the request body.
+WHAT I USED / CHANGED: Applied diffs to `models/Score.js` and `server.js`.
+
+PROMPT: "Alright let's finish off Phase 5 with the crap listed under 'homework' in the md"
+RESPONSE: Implemented the front-end authentication homework for Phase 5. Updated gameStore.js with auth state and actions, modified App.vue to show conditional auth links, updated PlayView.vue's end screen, and created new LoginView.vue and RegisterView.vue components.
+WHAT I USED / CHANGED: Applied changes to gameStore.js, App.vue, PlayView.vue and created the new view files. The front-end is now fully connected to the server's authentication system.
