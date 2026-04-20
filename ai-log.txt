@@ -29,3 +29,7 @@ WHAT I USED / CHANGED: Applied the diff to server.js. The server now persists sc
 PROMPT: "Alright. Let's finish this project by getting started on QuizBlitz-Phase-5.md. Let's go!"
 RESPONSE: Started Phase 5, Milestone 1. Provided commands to install bcryptjs and jsonwebtoken, instructions to update the .env file, and diffs to create the User model and import it into server.js.
 WHAT I USED / CHANGED: Installed packages, updated .env, created models/User.js, and updated server.js.
+
+PROMPT: "Alright, MS (milestone) 2"
+RESPONSE: Implemented the user registration route for Milestone 2 of Phase 5. Added bcryptjs and jsonwebtoken imports to server.js and created the POST /api/auth/register endpoint with validation, password hashing, and duplicate email checks.
+WHAT I USED / CHANGED: Applied the diff to server.js.
