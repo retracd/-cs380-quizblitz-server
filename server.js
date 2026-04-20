@@ -12,7 +12,15 @@ const verifyToken = require('./middleware/verifyToken')
 const app = express()
 
 // Middleware — must come before routes
-app.use(cors())
+// app.use(cors())
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://retracd.github.io'
+]
+
+app.use(cors({
+  origin: allowedOrigins
+}))
 app.use(express.json())
 
 // ── Routes ──────────────────────────────────────────────────────
