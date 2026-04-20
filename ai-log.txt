@@ -13,3 +13,7 @@ WHAT I USED / CHANGED: Applied the diff to server.js and will now proceed with t
 PROMPT: "Apply the homework changes for Phase 3 to my Vue front-end's gameStore.js and PlayView.vue."
 RESPONSE: Provided diffs to update gameStore.js to fetch questions from the server and add score submission logic, and PlayView.vue to integrate the new score submission UI.
 WHAT I USED / CHANGED: Applied the changes to gameStore.js and PlayView.vue. Verified front-end now fetches questions and can submit scores to the server.
+
+PROMPT: "Let's start Phase 4. Help me connect the server to MongoDB Atlas. QuizBlitz-Phase-4.md"
+RESPONSE: Guided user through Milestone 2 of Phase 4. Provided instructions to install mongoose and dotenv, create a .env file with the connection string, and applied a diff to server.js to implement the Mongoose connection logic.
+WHAT I USED / CHANGED: Installed packages, created .env, and applied the changes to server.js. Confirmed server connects to MongoDB on startup.
